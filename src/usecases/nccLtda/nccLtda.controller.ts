@@ -14,7 +14,7 @@ class NccLtdaController {
 
 		const orderBV = await new ConcatData(data[0]).concatData();
 
-		const res = await nccLtdaService.invoicingNccLtda(orderBV);
+		// const res = await nccLtdaService.invoicingNccLtda(orderBV);
 
 		return response.json(orderBV);
 	}
