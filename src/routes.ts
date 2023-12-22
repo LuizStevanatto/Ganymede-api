@@ -18,7 +18,7 @@ router.get("/", async (request, response) => {
 });
 
 router.get("/ping", async (request, response) => {
-	return response.send("PONG");
+	return response.send("PONG 🏓");
 });
 
 export { router };
