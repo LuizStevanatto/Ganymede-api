@@ -39,13 +39,15 @@ class NccLtdaController {
 		const dataDaAPI = null;
 
 		const data = await fluigHelper.makeRequest(urlDaAPI, metodoDaAPI, dataDaAPI);
-		console.log(data);
+		// console.log(data);
 
-		// const orderBV = await new ConcatData(data[0]).concatData();
+		const orderBV = await new ConcatData(data[0]).concatData();
+
+		// console.log(orderBV);
 
 		// const res =  nccLtdaService.invoicingNccLtda(orderBV);
 
-		return response.json(numProcess);
+		return response.json({ orderBV });
 	}
 
 	async doneNccLtda(request: Request, response: Response) {

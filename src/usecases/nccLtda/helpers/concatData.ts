@@ -10,6 +10,8 @@ class ConcatData {
 	async concatData(): Promise<OrderBV> {
 		const orderBV = new OrderBV();
 
+		console.log(this.data);
+
 		var valor_total = parseFloat(this.data.valorTotalNota.replace(",", "."));
 
 		const CNPJ = process.env.NCC_LTDA_CNPJ;
@@ -25,7 +27,7 @@ class ConcatData {
 		orderBV.info_complementares.centro_custo = this.data.codCentroCusto;
 		orderBV.info_complementares.conta_contabil = this.data.contaContabil;
 		orderBV.info_complementares.n_po_cliente = this.data.numPurchaseOrder;
-		orderBV.info_complementares.id_externo = String(this.data.NUM_PROCES);
+		orderBV.info_complementares.id_externo = String(this.data.numProcess);
 		orderBV.info_complementares.retencao_pcc = this.data.regraRetencaoPCC;
 		orderBV.info_complementares.moeda = this.data.moedaCambio;
 

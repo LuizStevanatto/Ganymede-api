@@ -12,7 +12,7 @@ export default interface IRequestData {
 	moedaCambio: string;
 	numParcelas: string;
 	faturar: string;
-	NUM_PROCES: number;
+	numProcess: number;
 	version: number;
 	emailFatura: any;
 }
