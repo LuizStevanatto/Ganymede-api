@@ -13,11 +13,6 @@ router.use("/nccLtda", nccLtdaRouter);
 router.use("/tlab", tlabRouter);
 
 router.get("/", async (request, response) => {
-	const networkInfo = os.networkInterfaces();
-	console.log(networkInfo);
-	console.log(networkInfo.Ethernet[0].address); // ip
-	console.log("APIII");
-
 	return response.status(200).send({ message: "Main Route Ganymede" });
 });
 
