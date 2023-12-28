@@ -8,7 +8,7 @@ export default interface IRequestData {
 	contaContabil: string;
 	numPurchaseOrder: string;
 	regraRetencaoPCC: string;
-	descricaoNota: string;
+	obs: string;
 	moedaCambio: string;
 	numParcelas: string;
 	faturar: string;

@@ -33,6 +33,8 @@ class OrderBV {
 			n_po_cliente: "",
 			id_externo: "",
 			moeda: "",
+			retencao_pcc: "",
+			obs: "",
 		};
 		this.notificar = [{ email: "" }];
 	}

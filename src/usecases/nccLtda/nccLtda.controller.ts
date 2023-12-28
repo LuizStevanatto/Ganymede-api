@@ -45,9 +45,10 @@ class NccLtdaController {
 
 		// console.log(orderBV);
 
-		// const res =  nccLtdaService.invoicingNccLtda(orderBV);
+		const res = await nccLtdaService.invoicingNccLtda(orderBV);
+		console.log({ res });
 
-		return response.json({ orderBV });
+		return response.json({ res });
 	}
 
 	async doneNccLtda(request: Request, response: Response) {
