@@ -39,6 +39,7 @@ class NccLtdaService {
 				statusFaturamento = {
 					status: "NAO_FATURADO",
 					message: res.data.response,
+					retornoIntIvrim: "FALHA",
 				};
 			}
 
@@ -47,6 +48,15 @@ class NccLtdaService {
 					status: "FATURADO",
 					message: res.data.response,
 					idIvirm: res.data.data._id,
+					retornoIntIvrim: "SUCESSO",
+				};
+			}
+
+			if (!res.data.result) {
+				statusFaturamento = {
+					status: "NAO_FATURADO",
+					message: res.data.response,
+					retornoIntIvrim: "FALHA",
 				};
 			}
 
