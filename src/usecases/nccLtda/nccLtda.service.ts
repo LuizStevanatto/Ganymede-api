@@ -56,7 +56,7 @@ class NccLtdaService {
 				statusFaturamento = {
 					status: "NAO_FATURADO",
 					message: res.data.response,
-					retornoIntIvrim: "FALHA",
+					retornoIntIvrim: "ERRO",
 				};
 			}
 
